@@ -23,5 +23,24 @@ window.onload = function() {
   let indexWhat = Math.floor(Math.random() * what.length);
   let indexWhen = Math.floor(Math.random() * when.length);
 
-  console.log();
+  console.log(
+    who[indexWho] +
+      " " +
+      action[indexAction] +
+      " " +
+      what[indexWhat] +
+      " " +
+      when[indexWhen]
+  );
+
+  let newExcuse =
+    who[indexWho] +
+    " " +
+    action[indexAction] +
+    " " +
+    what[indexWhat] +
+    " " +
+    when[indexWhen];
+  const elem = document.getElementById("excuse");
+  elem.textContent = newExcuse;
 };
