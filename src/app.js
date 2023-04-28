@@ -7,6 +7,7 @@ import "./assets/img/4geeks.ico";
 
 window.onload = function() {
   //write your code here
+
   let who = ["The dog", "My grandma", "His turtle", "My bird"];
   let action = ["ate", "peed", "crushed", "broke"];
   let what = ["my homework", "the keys", "the car"];
@@ -41,6 +42,6 @@ window.onload = function() {
     what[indexWhat] +
     " " +
     when[indexWhen];
-  const elem = document.getElementById("excuse");
-  elem.textContent = newExcuse;
+
+  document.getElementById("excuse").innerHTML = newExcuse;
 };
